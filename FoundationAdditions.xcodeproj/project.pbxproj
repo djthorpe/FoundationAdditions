@@ -1,0 +1,188 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		6ED1FC3816C81D110084A33E /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.md; sourceTree = "<group>"; };
+		6ED1FC3A16C81D110084A33E /* NSData+HashUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+HashUtils.h"; sourceTree = "<group>"; };
+		6ED1FC3B16C81D110084A33E /* NSData+HashUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+HashUtils.m"; sourceTree = "<group>"; };
+		6ED1FC3D16C81D110084A33E /* NSDate+Formatting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+Formatting.h"; sourceTree = "<group>"; };
+		6ED1FC3E16C81D110084A33E /* NSDate+Formatting.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Formatting.m"; sourceTree = "<group>"; };
+		6ED1FC3F16C81D110084A33E /* NSDate+HTTPUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+HTTPUtils.h"; sourceTree = "<group>"; };
+		6ED1FC4016C81D110084A33E /* NSDate+HTTPUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+HTTPUtils.m"; sourceTree = "<group>"; };
+		6ED1FC4216C81D110084A33E /* NSFileManager+PathUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+PathUtils.h"; sourceTree = "<group>"; };
+		6ED1FC4316C81D110084A33E /* NSFileManager+PathUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+PathUtils.m"; sourceTree = "<group>"; };
+		6ED1FC4516C81D110084A33E /* NSImage+MGCropExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSImage+MGCropExtensions.h"; sourceTree = "<group>"; };
+		6ED1FC4616C81D110084A33E /* NSImage+MGCropExtensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSImage+MGCropExtensions.m"; sourceTree = "<group>"; };
+		6ED1FC4816C81D110084A33E /* NSString+CSVUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+CSVUtils.h"; sourceTree = "<group>"; };
+		6ED1FC4916C81D110084A33E /* NSString+CSVUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+CSVUtils.m"; sourceTree = "<group>"; };
+		6ED1FC4A16C81D110084A33E /* NSString+PathUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+PathUtils.h"; sourceTree = "<group>"; };
+		6ED1FC4B16C81D110084A33E /* NSString+PathUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+PathUtils.m"; sourceTree = "<group>"; };
+		6ED1FC4C16C81D110084A33E /* NSString+URIUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+URIUtils.h"; sourceTree = "<group>"; };
+		6ED1FC4D16C81D110084A33E /* NSString+URIUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+URIUtils.m"; sourceTree = "<group>"; };
+		6ED1FC4E16C81D110084A33E /* NSString+XMLUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+XMLUtils.h"; sourceTree = "<group>"; };
+		6ED1FC4F16C81D110084A33E /* NSString+XMLUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+XMLUtils.m"; sourceTree = "<group>"; };
+		6ED1FC5016C81D110084A33E /* readme.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		6ED1FC5216C81D110084A33E /* NSTableViewWithDeleteKey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSTableViewWithDeleteKey.h; sourceTree = "<group>"; };
+		6ED1FC5316C81D110084A33E /* NSTableViewWithDeleteKey.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSTableViewWithDeleteKey.m; sourceTree = "<group>"; };
+		6ED1FC5516C81D110084A33E /* NSWorkspace+MimetypeAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSWorkspace+MimetypeAdditions.h"; sourceTree = "<group>"; };
+		6ED1FC5616C81D110084A33E /* NSWorkspace+MimetypeAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSWorkspace+MimetypeAdditions.m"; sourceTree = "<group>"; };
+		6ED1FC5816C81D110084A33E /* NSXMLDocument+KMLUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSXMLDocument+KMLUtils.h"; sourceTree = "<group>"; };
+		6ED1FC5916C81D110084A33E /* NSXMLDocument+KMLUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSXMLDocument+KMLUtils.m"; sourceTree = "<group>"; };
+		6ED1FC5A16C81D110084A33E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		6ED1FC2C16C81CEC0084A33E = {
+			isa = PBXGroup;
+			children = (
+				6ED1FC5A16C81D110084A33E /* README.md */,
+				6ED1FC3816C81D110084A33E /* LICENSE.md */,
+				6ED1FC3916C81D110084A33E /* NSData-Utils */,
+				6ED1FC3C16C81D110084A33E /* NSDate-Utils */,
+				6ED1FC4116C81D110084A33E /* NSFileManager-Utils */,
+				6ED1FC4416C81D110084A33E /* NSImage-Utils */,
+				6ED1FC4716C81D110084A33E /* NSString-Utils */,
+				6ED1FC5116C81D110084A33E /* NSTableView-Utils */,
+				6ED1FC5416C81D110084A33E /* NSWorkspace-Utils */,
+				6ED1FC5716C81D110084A33E /* NSXMLDocument-Utils */,
+			);
+			sourceTree = "<group>";
+		};
+		6ED1FC3916C81D110084A33E /* NSData-Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6ED1FC3A16C81D110084A33E /* NSData+HashUtils.h */,
+				6ED1FC3B16C81D110084A33E /* NSData+HashUtils.m */,
+			);
+			path = "NSData-Utils";
+			sourceTree = "<group>";
+		};
+		6ED1FC3C16C81D110084A33E /* NSDate-Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6ED1FC3D16C81D110084A33E /* NSDate+Formatting.h */,
+				6ED1FC3E16C81D110084A33E /* NSDate+Formatting.m */,
+				6ED1FC3F16C81D110084A33E /* NSDate+HTTPUtils.h */,
+				6ED1FC4016C81D110084A33E /* NSDate+HTTPUtils.m */,
+			);
+			path = "NSDate-Utils";
+			sourceTree = "<group>";
+		};
+		6ED1FC4116C81D110084A33E /* NSFileManager-Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6ED1FC4216C81D110084A33E /* NSFileManager+PathUtils.h */,
+				6ED1FC4316C81D110084A33E /* NSFileManager+PathUtils.m */,
+			);
+			path = "NSFileManager-Utils";
+			sourceTree = "<group>";
+		};
+		6ED1FC4416C81D110084A33E /* NSImage-Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6ED1FC4516C81D110084A33E /* NSImage+MGCropExtensions.h */,
+				6ED1FC4616C81D110084A33E /* NSImage+MGCropExtensions.m */,
+			);
+			path = "NSImage-Utils";
+			sourceTree = "<group>";
+		};
+		6ED1FC4716C81D110084A33E /* NSString-Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6ED1FC4816C81D110084A33E /* NSString+CSVUtils.h */,
+				6ED1FC4916C81D110084A33E /* NSString+CSVUtils.m */,
+				6ED1FC4A16C81D110084A33E /* NSString+PathUtils.h */,
+				6ED1FC4B16C81D110084A33E /* NSString+PathUtils.m */,
+				6ED1FC4C16C81D110084A33E /* NSString+URIUtils.h */,
+				6ED1FC4D16C81D110084A33E /* NSString+URIUtils.m */,
+				6ED1FC4E16C81D110084A33E /* NSString+XMLUtils.h */,
+				6ED1FC4F16C81D110084A33E /* NSString+XMLUtils.m */,
+				6ED1FC5016C81D110084A33E /* readme.txt */,
+			);
+			path = "NSString-Utils";
+			sourceTree = "<group>";
+		};
+		6ED1FC5116C81D110084A33E /* NSTableView-Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6ED1FC5216C81D110084A33E /* NSTableViewWithDeleteKey.h */,
+				6ED1FC5316C81D110084A33E /* NSTableViewWithDeleteKey.m */,
+			);
+			path = "NSTableView-Utils";
+			sourceTree = "<group>";
+		};
+		6ED1FC5416C81D110084A33E /* NSWorkspace-Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6ED1FC5516C81D110084A33E /* NSWorkspace+MimetypeAdditions.h */,
+				6ED1FC5616C81D110084A33E /* NSWorkspace+MimetypeAdditions.m */,
+			);
+			path = "NSWorkspace-Utils";
+			sourceTree = "<group>";
+		};
+		6ED1FC5716C81D110084A33E /* NSXMLDocument-Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6ED1FC5816C81D110084A33E /* NSXMLDocument+KMLUtils.h */,
+				6ED1FC5916C81D110084A33E /* NSXMLDocument+KMLUtils.m */,
+			);
+			path = "NSXMLDocument-Utils";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		6ED1FC2E16C81CEC0084A33E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+			};
+			buildConfigurationList = 6ED1FC3116C81CEC0084A33E /* Build configuration list for PBXProject "FoundationAdditions" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6ED1FC2C16C81CEC0084A33E;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		6ED1FC3316C81CEC0084A33E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		6ED1FC3416C81CEC0084A33E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6ED1FC3116C81CEC0084A33E /* Build configuration list for PBXProject "FoundationAdditions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6ED1FC3316C81CEC0084A33E /* Debug */,
+				6ED1FC3416C81CEC0084A33E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6ED1FC2E16C81CEC0084A33E /* Project object */;
+}

@@ -1,10 +1,3 @@
-//
-//  NSDate+HTTPUtils.m
-//  WebServerFramework
-//
-//  Created by David Thorpe on 09/04/2007.
-//  Copyright 2007 Some rights reserved, see LICENSE file. 
-//
 
 #import "NSDate+HTTPUtils.h"
 

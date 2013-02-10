@@ -1,10 +1,3 @@
-//
-//  NSWorkspace+MimetypeAdditions.m
-//  SomethinElse
-//
-//  Created by David Thorpe on 27/05/2006.
-//  Copyright 2006 __MyCompanyName__. All rights reserved.
-//
 
 #import <QTKit/QTKit.h>
 #import <Quartz/Quartz.h>

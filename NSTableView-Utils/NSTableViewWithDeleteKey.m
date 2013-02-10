@@ -1,10 +1,3 @@
-//
-//  NSTableViewWithDeleteKey.m
-//  Fluxo
-//
-//  Created by David Thorpe on 20/03/2007.
-//  Copyright 2007 __MyCompanyName__. All rights reserved.
-//
 
 #import "NSTableViewWithDeleteKey.h"
 

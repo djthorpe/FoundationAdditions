@@ -1,10 +1,3 @@
-//
-//  NSXMLDocument+KMLUtils.h
-//  Fluxo
-//
-//  Created by David Thorpe on 17/07/2007.
-//  Copyright 2007 __MyCompanyName__. All rights reserved.
-//
 
 #import <Foundation/Foundation.h>
 
