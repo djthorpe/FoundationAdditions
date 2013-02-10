@@ -2,33 +2,31 @@
 #import "NSDate+HTTPUtils.h"
 
 @interface HTTPUtilsPrivate : NSObject {
-  NSDictionary* m_theWeekdays;
-  NSDictionary* m_theMonths;
+  NSDictionary* _weekdays;
+  NSDictionary* _months;
 }
 
 +(HTTPUtilsPrivate* )sharedObject;
--(NSDictionary* )weekdays;
--(NSDictionary* )months;
+
+@property (readonly) NSDictionary* weekdays;
+@property (readonly) NSDictionary* months;
 
 @end
 
 @implementation HTTPUtilsPrivate
 
+@synthesize weekdays = _weekdays;
+@synthesize months = _months;
+
 -(id)init {
   self = [super init];
   if(self) {
-    m_theWeekdays = [[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSNumber numberWithUnsignedInt:0],[NSNumber numberWithUnsignedInt:0],[NSNumber numberWithUnsignedInt:1],[NSNumber numberWithUnsignedInt:1],[NSNumber numberWithUnsignedInt:2],[NSNumber numberWithUnsignedInt:2],[NSNumber numberWithUnsignedInt:3],[NSNumber numberWithUnsignedInt:3],[NSNumber numberWithUnsignedInt:4],[NSNumber numberWithUnsignedInt:4],[NSNumber numberWithUnsignedInt:5],[NSNumber numberWithUnsignedInt:5],[NSNumber numberWithUnsignedInt:6],[NSNumber numberWithUnsignedInt:6],nil]
-                                              forKeys:[NSArray arrayWithObjects:@"sun",@"sunday",@"mon",@"monday",@"tue",@"tuesday",@"wed",@"wednesday",@"thu",@"thursday",@"fri",@"friday",@"sat",@"saturday",nil]] retain];  
-    m_theMonths = [[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSNumber numberWithUnsignedInt:1],[NSNumber numberWithUnsignedInt:1],[NSNumber numberWithUnsignedInt:2],[NSNumber numberWithUnsignedInt:2],[NSNumber numberWithUnsignedInt:3],[NSNumber numberWithUnsignedInt:3],[NSNumber numberWithUnsignedInt:4],[NSNumber numberWithUnsignedInt:4],[NSNumber numberWithUnsignedInt:5],[NSNumber numberWithUnsignedInt:6],[NSNumber numberWithUnsignedInt:6],[NSNumber numberWithUnsignedInt:7],[NSNumber numberWithUnsignedInt:7],[NSNumber numberWithUnsignedInt:8],[NSNumber numberWithUnsignedInt:8],[NSNumber numberWithUnsignedInt:9],[NSNumber numberWithUnsignedInt:9],[NSNumber numberWithUnsignedInt:10],[NSNumber numberWithUnsignedInt:10],[NSNumber numberWithUnsignedInt:11],[NSNumber numberWithUnsignedInt:11],[NSNumber numberWithUnsignedInt:12],[NSNumber numberWithUnsignedInt:12],nil]
-                                            forKeys:[NSArray arrayWithObjects:@"jan",@"january",@"feb",@"february",@"mar",@"march",@"apr",@"april",@"may",@"jun",@"june",@"jul",@"july",@"aug",@"august",@"sep",@"september",@"oct",@"october",@"nov",@"november",@"dec",@"december",nil]] retain];
+    _weekdays = [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSNumber numberWithUnsignedInt:0],[NSNumber numberWithUnsignedInt:0],[NSNumber numberWithUnsignedInt:1],[NSNumber numberWithUnsignedInt:1],[NSNumber numberWithUnsignedInt:2],[NSNumber numberWithUnsignedInt:2],[NSNumber numberWithUnsignedInt:3],[NSNumber numberWithUnsignedInt:3],[NSNumber numberWithUnsignedInt:4],[NSNumber numberWithUnsignedInt:4],[NSNumber numberWithUnsignedInt:5],[NSNumber numberWithUnsignedInt:5],[NSNumber numberWithUnsignedInt:6],[NSNumber numberWithUnsignedInt:6],nil]
+                                              forKeys:[NSArray arrayWithObjects:@"sun",@"sunday",@"mon",@"monday",@"tue",@"tuesday",@"wed",@"wednesday",@"thu",@"thursday",@"fri",@"friday",@"sat",@"saturday",nil]];
+    _months = [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSNumber numberWithUnsignedInt:1],[NSNumber numberWithUnsignedInt:1],[NSNumber numberWithUnsignedInt:2],[NSNumber numberWithUnsignedInt:2],[NSNumber numberWithUnsignedInt:3],[NSNumber numberWithUnsignedInt:3],[NSNumber numberWithUnsignedInt:4],[NSNumber numberWithUnsignedInt:4],[NSNumber numberWithUnsignedInt:5],[NSNumber numberWithUnsignedInt:6],[NSNumber numberWithUnsignedInt:6],[NSNumber numberWithUnsignedInt:7],[NSNumber numberWithUnsignedInt:7],[NSNumber numberWithUnsignedInt:8],[NSNumber numberWithUnsignedInt:8],[NSNumber numberWithUnsignedInt:9],[NSNumber numberWithUnsignedInt:9],[NSNumber numberWithUnsignedInt:10],[NSNumber numberWithUnsignedInt:10],[NSNumber numberWithUnsignedInt:11],[NSNumber numberWithUnsignedInt:11],[NSNumber numberWithUnsignedInt:12],[NSNumber numberWithUnsignedInt:12],nil]
+                                            forKeys:[NSArray arrayWithObjects:@"jan",@"january",@"feb",@"february",@"mar",@"march",@"apr",@"april",@"may",@"jun",@"june",@"jul",@"july",@"aug",@"august",@"sep",@"september",@"oct",@"october",@"nov",@"november",@"dec",@"december",nil]];
   }  
   return self;  
-}
-
--(void)dealloc {
-  [m_theWeekdays release];
-  [m_theMonths release];
-  [super dealloc];
 }
 
 +(HTTPUtilsPrivate* )sharedObject {
@@ -37,14 +35,6 @@
 		object = [[HTTPUtilsPrivate alloc] init];
 	}
 	return object;
-}
-
--(NSDictionary* )weekdays {
-  return m_theWeekdays;
-}
-
--(NSDictionary* )months {
-  return m_theMonths;
 }
 
 @end

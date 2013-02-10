@@ -4,6 +4,7 @@
 @implementation NSDate (Formatting)
 
 // ISO8601 from here: http://www.w3.org/TR/NOTE-datetime
+
 -(NSString* )descriptionISO8601 {
 	NSString* theString1 = [self descriptionWithCalendarFormat:@"%Y-%m-%dT%H:%M:%S" timeZone:nil locale:nil];
 	NSString* theString2 = [self descriptionWithCalendarFormat:@"%z" timeZone:nil locale:nil];

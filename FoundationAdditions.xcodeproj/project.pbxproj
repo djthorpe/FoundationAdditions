@@ -9,13 +9,9 @@
 /* Begin PBXBuildFile section */
 		1484449B16C82C36000EE479 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1484449A16C82C36000EE479 /* Foundation.framework */; };
 		148444A716C82DF6000EE479 /* NSData+HashUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED1FC3B16C81D110084A33E /* NSData+HashUtils.m */; };
-		148444A916C82E28000EE479 /* libssl.0.9.8.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 148444A816C82E28000EE479 /* libssl.0.9.8.dylib */; };
 		148444AB16C82E4B000EE479 /* libcrypto.0.9.8.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 148444AA16C82E4B000EE479 /* libcrypto.0.9.8.dylib */; };
 		148444AE16C830C4000EE479 /* NSDataUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 148444AD16C830C4000EE479 /* NSDataUtilsTests.m */; };
-		148444B116C83212000EE479 /* NSData+HashUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED1FC3B16C81D110084A33E /* NSData+HashUtils.m */; };
 		148444B416C83212000EE479 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1484449A16C82C36000EE479 /* Foundation.framework */; };
-		148444B516C83212000EE479 /* libssl.0.9.8.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 148444A816C82E28000EE479 /* libssl.0.9.8.dylib */; };
-		148444B616C83212000EE479 /* libcrypto.0.9.8.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 148444AA16C82E4B000EE479 /* libcrypto.0.9.8.dylib */; };
 		148444BE16C83277000EE479 /* NSDateUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 148444BD16C83277000EE479 /* NSDateUtilsTests.m */; };
 		148444BF16C832B8000EE479 /* NSDate+Formatting.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED1FC3E16C81D110084A33E /* NSDate+Formatting.m */; };
 		148444C016C832BB000EE479 /* NSDate+HTTPUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED1FC4016C81D110084A33E /* NSDate+HTTPUtils.m */; };
@@ -45,7 +41,6 @@
 /* Begin PBXFileReference section */
 		1484449616C82C36000EE479 /* NSDataUtilsTests */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NSDataUtilsTests; sourceTree = BUILT_PRODUCTS_DIR; };
 		1484449A16C82C36000EE479 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		148444A816C82E28000EE479 /* libssl.0.9.8.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libssl.0.9.8.dylib; path = ../../../../usr/lib/libssl.0.9.8.dylib; sourceTree = "<group>"; };
 		148444AA16C82E4B000EE479 /* libcrypto.0.9.8.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.0.9.8.dylib; path = ../../../../usr/lib/libcrypto.0.9.8.dylib; sourceTree = "<group>"; };
 		148444AD16C830C4000EE479 /* NSDataUtilsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDataUtilsTests.m; sourceTree = "<group>"; };
 		148444BB16C83212000EE479 /* NSDataUtilsTests copy */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "NSDataUtilsTests copy"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,7 +80,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1484449B16C82C36000EE479 /* Foundation.framework in Frameworks */,
-				148444A916C82E28000EE479 /* libssl.0.9.8.dylib in Frameworks */,
 				148444AB16C82E4B000EE479 /* libcrypto.0.9.8.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,8 +89,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				148444B416C83212000EE479 /* Foundation.framework in Frameworks */,
-				148444B516C83212000EE479 /* libssl.0.9.8.dylib in Frameworks */,
-				148444B616C83212000EE479 /* libcrypto.0.9.8.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,7 +108,6 @@
 			isa = PBXGroup;
 			children = (
 				148444AA16C82E4B000EE479 /* libcrypto.0.9.8.dylib */,
-				148444A816C82E28000EE479 /* libssl.0.9.8.dylib */,
 				1484449A16C82C36000EE479 /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -308,7 +299,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				148444B116C83212000EE479 /* NSData+HashUtils.m in Sources */,
 				148444BE16C83277000EE479 /* NSDateUtilsTests.m in Sources */,
 				148444BF16C832B8000EE479 /* NSDate+Formatting.m in Sources */,
 				148444C016C832BB000EE479 /* NSDate+HTTPUtils.m in Sources */,
