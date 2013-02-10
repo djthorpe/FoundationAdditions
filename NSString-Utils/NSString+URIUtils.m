@@ -1,10 +1,3 @@
-//
-//  NSString+URIUtils.m
-//  Flow
-//
-//  Created by David Thorpe on 26/01/2006.
-//  Copyright 2006 __MyCompanyName__. All rights reserved.
-//
 
 #import "NSString+URIUtils.h"
 

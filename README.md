@@ -15,6 +15,8 @@ Any bugs or additions, please let me know!
 NSData+HashUtils
 ------------
 
+If you use these, you will also be required to link to the OpenSSL library.
+
 ```objc
 @interface NSData (HashUtils)
 -(NSData* )md5Digest;
@@ -122,6 +124,8 @@ license (as described in the header file).
 
 NSWorkspace+MimetypeAdditions
 -----------------------------
+
+You will need to include the QTKit as a dependency if you wish to use these methods.
 
 ```objc
 @interface NSWorkspace (MimetypeAdditions)

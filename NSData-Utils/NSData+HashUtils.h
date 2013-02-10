@@ -1,10 +1,3 @@
-//
-//  NSData+HashUtils.h
-//  DeliverySystem
-//
-//  Created by David Thorpe on 26/02/2006.
-//  Copyright 2006 __MyCompanyName__. All rights reserved.
-//
 
 #import <Foundation/Foundation.h>
 
