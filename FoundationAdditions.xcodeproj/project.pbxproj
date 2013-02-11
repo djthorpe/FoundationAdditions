@@ -6,6 +6,23 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		140A25A416C8E2E600F8EE1B /* Build Everything */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 140A25A516C8E2E600F8EE1B /* Build configuration list for PBXAggregateTarget "Build Everything" */;
+			buildPhases = (
+			);
+			dependencies = (
+				140A25A916C8E2FE00F8EE1B /* PBXTargetDependency */,
+				140A25AF16C8E30400F8EE1B /* PBXTargetDependency */,
+				140A25AB16C8E2FF00F8EE1B /* PBXTargetDependency */,
+				140A25AD16C8E30200F8EE1B /* PBXTargetDependency */,
+			);
+			name = "Build Everything";
+			productName = "Build Everything";
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		140A259816C8E19B00F8EE1B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1484449A16C82C36000EE479 /* Foundation.framework */; };
 		140A259F16C8E1AD00F8EE1B /* NSStringUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 140A259116C8E12D00F8EE1B /* NSStringUtilsTests.m */; };
@@ -25,6 +42,37 @@
 		148444CF16C83DC6000EE479 /* NSFileManagerUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 148444CE16C83DC6000EE479 /* NSFileManagerUtilsTests.m */; };
 		148444D016C83DCE000EE479 /* NSFileManager+PathUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED1FC4316C81D110084A33E /* NSFileManager+PathUtils.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		140A25A816C8E2FE00F8EE1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6ED1FC2E16C81CEC0084A33E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1484449516C82C36000EE479;
+			remoteInfo = NSDataUtilsTests;
+		};
+		140A25AA16C8E2FF00F8EE1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6ED1FC2E16C81CEC0084A33E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 148444AF16C83212000EE479;
+			remoteInfo = NSDateUtilsTests;
+		};
+		140A25AC16C8E30200F8EE1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6ED1FC2E16C81CEC0084A33E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 148444C116C83D65000EE479;
+			remoteInfo = NSFileManagerUtilsTests;
+		};
+		140A25AE16C8E30400F8EE1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6ED1FC2E16C81CEC0084A33E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 140A259316C8E19B00F8EE1B;
+			remoteInfo = NSStringUtilsTests;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		140A259916C8E19B00F8EE1B /* CopyFiles */ = {
@@ -67,14 +115,14 @@
 
 /* Begin PBXFileReference section */
 		140A259116C8E12D00F8EE1B /* NSStringUtilsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSStringUtilsTests.m; sourceTree = "<group>"; };
-		140A259D16C8E19B00F8EE1B /* NSFileManagerUtilsTests copy */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "NSFileManagerUtilsTests copy"; sourceTree = BUILT_PRODUCTS_DIR; };
+		140A259D16C8E19B00F8EE1B /* NSStringUtilsTests */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NSStringUtilsTests; sourceTree = BUILT_PRODUCTS_DIR; };
 		1484449616C82C36000EE479 /* NSDataUtilsTests */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NSDataUtilsTests; sourceTree = BUILT_PRODUCTS_DIR; };
 		1484449A16C82C36000EE479 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		148444AA16C82E4B000EE479 /* libcrypto.0.9.8.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.0.9.8.dylib; path = ../../../../usr/lib/libcrypto.0.9.8.dylib; sourceTree = "<group>"; };
 		148444AD16C830C4000EE479 /* NSDataUtilsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDataUtilsTests.m; sourceTree = "<group>"; };
-		148444BB16C83212000EE479 /* NSDataUtilsTests copy */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "NSDataUtilsTests copy"; sourceTree = BUILT_PRODUCTS_DIR; };
+		148444BB16C83212000EE479 /* NSDateUtilsTests */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NSDateUtilsTests; sourceTree = BUILT_PRODUCTS_DIR; };
 		148444BD16C83277000EE479 /* NSDateUtilsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDateUtilsTests.m; sourceTree = "<group>"; };
-		148444CC16C83D65000EE479 /* NSDateUtilsTests copy */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "NSDateUtilsTests copy"; sourceTree = BUILT_PRODUCTS_DIR; };
+		148444CC16C83D65000EE479 /* NSFileManagerUtilsTests */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NSFileManagerUtilsTests; sourceTree = BUILT_PRODUCTS_DIR; };
 		148444CE16C83DC6000EE479 /* NSFileManagerUtilsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSFileManagerUtilsTests.m; sourceTree = "<group>"; };
 		6ED1FC3816C81D110084A33E /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.md; sourceTree = "<group>"; };
 		6ED1FC3A16C81D110084A33E /* NSData+HashUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+HashUtils.h"; sourceTree = "<group>"; };
@@ -146,9 +194,9 @@
 			isa = PBXGroup;
 			children = (
 				1484449616C82C36000EE479 /* NSDataUtilsTests */,
-				148444BB16C83212000EE479 /* NSDataUtilsTests copy */,
-				148444CC16C83D65000EE479 /* NSDateUtilsTests copy */,
-				140A259D16C8E19B00F8EE1B /* NSFileManagerUtilsTests copy */,
+				148444BB16C83212000EE479 /* NSDateUtilsTests */,
+				148444CC16C83D65000EE479 /* NSFileManagerUtilsTests */,
+				140A259D16C8E19B00F8EE1B /* NSStringUtilsTests */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -181,12 +229,12 @@
 				148444AC16C830C4000EE479 /* tests */,
 				6ED1FC3916C81D110084A33E /* NSData-Utils */,
 				6ED1FC3C16C81D110084A33E /* NSDate-Utils */,
-				6ED1FC4116C81D110084A33E /* NSFileManager-Utils */,
-				6ED1FC4416C81D110084A33E /* NSImage-Utils */,
 				6ED1FC4716C81D110084A33E /* NSString-Utils */,
-				6ED1FC5116C81D110084A33E /* NSTableView-Utils */,
-				6ED1FC5416C81D110084A33E /* NSWorkspace-Utils */,
 				6ED1FC5716C81D110084A33E /* NSXMLDocument-Utils */,
+				6ED1FC5416C81D110084A33E /* NSWorkspace-Utils */,
+				6ED1FC5116C81D110084A33E /* NSTableView-Utils */,
+				6ED1FC4416C81D110084A33E /* NSImage-Utils */,
+				6ED1FC4116C81D110084A33E /* NSFileManager-Utils */,
 				1484449916C82C36000EE479 /* Frameworks */,
 				1484449716C82C36000EE479 /* Products */,
 			);
@@ -290,7 +338,7 @@
 			);
 			name = NSStringUtilsTests;
 			productName = NSDataUtilsTests;
-			productReference = 140A259D16C8E19B00F8EE1B /* NSFileManagerUtilsTests copy */;
+			productReference = 140A259D16C8E19B00F8EE1B /* NSStringUtilsTests */;
 			productType = "com.apple.product-type.tool";
 		};
 		1484449516C82C36000EE479 /* NSDataUtilsTests */ = {
@@ -324,7 +372,7 @@
 			);
 			name = NSDateUtilsTests;
 			productName = NSDataUtilsTests;
-			productReference = 148444BB16C83212000EE479 /* NSDataUtilsTests copy */;
+			productReference = 148444BB16C83212000EE479 /* NSDateUtilsTests */;
 			productType = "com.apple.product-type.tool";
 		};
 		148444C116C83D65000EE479 /* NSFileManagerUtilsTests */ = {
@@ -341,7 +389,7 @@
 			);
 			name = NSFileManagerUtilsTests;
 			productName = NSDataUtilsTests;
-			productReference = 148444CC16C83D65000EE479 /* NSDateUtilsTests copy */;
+			productReference = 148444CC16C83D65000EE479 /* NSFileManagerUtilsTests */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -364,6 +412,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				140A25A416C8E2E600F8EE1B /* Build Everything */,
 				1484449516C82C36000EE479 /* NSDataUtilsTests */,
 				148444AF16C83212000EE479 /* NSDateUtilsTests */,
 				148444C116C83D65000EE479 /* NSFileManagerUtilsTests */,
@@ -415,6 +464,29 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		140A25A916C8E2FE00F8EE1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1484449516C82C36000EE479 /* NSDataUtilsTests */;
+			targetProxy = 140A25A816C8E2FE00F8EE1B /* PBXContainerItemProxy */;
+		};
+		140A25AB16C8E2FF00F8EE1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 148444AF16C83212000EE479 /* NSDateUtilsTests */;
+			targetProxy = 140A25AA16C8E2FF00F8EE1B /* PBXContainerItemProxy */;
+		};
+		140A25AD16C8E30200F8EE1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 148444C116C83D65000EE479 /* NSFileManagerUtilsTests */;
+			targetProxy = 140A25AC16C8E30200F8EE1B /* PBXContainerItemProxy */;
+		};
+		140A25AF16C8E30400F8EE1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 140A259316C8E19B00F8EE1B /* NSStringUtilsTests */;
+			targetProxy = 140A25AE16C8E30400F8EE1B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
 		140A259B16C8E19B00F8EE1B /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -443,7 +515,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_NAME = "NSFileManagerUtilsTests copy";
+				PRODUCT_NAME = NSStringUtilsTests;
 				SDKROOT = macosx10.7;
 			};
 			name = Debug;
@@ -468,7 +540,26 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				PRODUCT_NAME = "NSFileManagerUtilsTests copy";
+				PRODUCT_NAME = NSStringUtilsTests;
+				SDKROOT = macosx10.7;
+			};
+			name = Release;
+		};
+		140A25A616C8E2E600F8EE1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.7;
+			};
+			name = Debug;
+		};
+		140A25A716C8E2E600F8EE1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx10.7;
 			};
 			name = Release;
@@ -557,7 +648,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_NAME = "NSDataUtilsTests copy";
+				PRODUCT_NAME = NSDateUtilsTests;
 				SDKROOT = macosx10.7;
 			};
 			name = Debug;
@@ -582,7 +673,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				PRODUCT_NAME = "NSDataUtilsTests copy";
+				PRODUCT_NAME = NSDateUtilsTests;
 				SDKROOT = macosx10.7;
 			};
 			name = Release;
@@ -614,7 +705,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_NAME = "NSDateUtilsTests copy";
+				PRODUCT_NAME = NSFileManagerUtilsTests;
 				SDKROOT = macosx10.7;
 			};
 			name = Debug;
@@ -639,7 +730,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				PRODUCT_NAME = "NSDateUtilsTests copy";
+				PRODUCT_NAME = NSFileManagerUtilsTests;
 				SDKROOT = macosx10.7;
 			};
 			name = Release;
@@ -667,6 +758,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		140A25A516C8E2E600F8EE1B /* Build configuration list for PBXAggregateTarget "Build Everything" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				140A25A616C8E2E600F8EE1B /* Debug */,
+				140A25A716C8E2E600F8EE1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		148444A516C82C36000EE479 /* Build configuration list for PBXNativeTarget "NSDataUtilsTests" */ = {
 			isa = XCConfigurationList;
