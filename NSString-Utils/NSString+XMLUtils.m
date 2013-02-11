@@ -21,12 +21,12 @@ California 94305, USA.
 
 - (NSString *) stringByUnescapingEntities: (NSDictionary *) entitiesDictionary {
     NSString *unescapedString = (NSString *) CFXMLCreateStringByUnescapingEntities(NULL, (CFStringRef) self, (CFDictionaryRef) entitiesDictionary);
-    return [unescapedString autorelease];
+    return unescapedString;
 }
 
 - (NSString *) stringByEscapingEntities: (NSDictionary *) entitiesDictionary {
   NSString *escapedString = (NSString *) CFXMLCreateStringByEscapingEntities(NULL, (CFStringRef) self, (CFDictionaryRef) entitiesDictionary);
-  return [escapedString autorelease];
+  return escapedString;
 }
 
 @end

@@ -12,7 +12,7 @@
     [newString replaceCharactersInRange:r withString:subs];
     r = [newString rangeOfCharacterFromSet:set];
   } while(r.location != NSNotFound);
-  return [newString autorelease];
+  return newString;
 }
 
 -(NSString* )stringByNormalizingPath {
